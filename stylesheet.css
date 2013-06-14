@@ -128,6 +128,20 @@ body {
     list-style: none;
 }
 
+#text a {
+    color: #4488FF;
+    text-decoration: none;
+}
+
+#text a:hover {
+    text-decoration: underline;
+}
+
+#text a:visited {
+    color: #FF88FF;
+    text-decoration: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
