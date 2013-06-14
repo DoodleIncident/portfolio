@@ -1,0 +1,131 @@
+body {
+    background-color: #400050;
+}
+
+#header {
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #650070;
+    background-repeat: no-repeat;
+}
+
+#content {
+    background-color: #400050;
+}
+
+#editor {
+    width: 70%;
+    margin: auto;
+    padding: 0 0 100px;
+}
+
+#tabbar {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#tabbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#tabbar li {
+    display: inline-block;
+
+    padding: 5px;
+
+    background-color: #650070;
+    color: #FFF;
+}
+
+#tabbar li:hover {
+    background-color: #FFF;
+    color: #141016;
+}
+
+#tabbar li.selected {
+    background-color: #141016;
+    color: #FFF;
+}
+
+#tabbar li.selected:hover {
+    background-color: #141016;
+    color: #FFF;
+}
+
+#tabbar li a {
+    padding: 0 0.3em;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#text {
+    clear: both;
+    padding: 5px;
+
+    color: #FFFFAA;
+    background-color: #141016;
+
+    font-family: Consolas, monaco, monospace;
+    font-size: 20px;
+    line-height: 1.5em;
+
+    counter-reset: nums;
+}
+
+#text h1,
+#text h2,
+#text h3,
+#text span,
+#text p,
+#text li {
+    counter-increment: nums;
+
+    padding-left: 5px;
+
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+#text span {
+    font-size: 20px;
+    display: block;
+}
+
+#text span:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#text h1:before,
+#text h2:before,
+#text h3:before,
+#text span:before,
+#text p:before,
+#text li:before {
+    content: counter(nums) ". ";
+    display: inline-block;
+    white-space: pre;
+    float: left;
+    clear: both;
+    color: gray;
+}
+
+#text li:before {
+    content: counter(nums) ".     ";
+}
+#text ul {
+    list-style: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
